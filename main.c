@@ -2,6 +2,7 @@
 #include "arithmetic.h"
 #include "scientific.h"
 #include "utility.h"
+#include "conversions.h"
 
 int main() {
     int choice;
@@ -45,6 +46,14 @@ int main() {
                 printf("Result: %.2f\n", power(a, b));
                 break;
             case 9:
+                a = get_input();
+                printf("Result: %.4f radians\n", degrees_to_radians(a));
+                break;
+            case 10:
+                a = get_input();
+                printf("Result: %.4f degrees\n", radians_to_degrees(a));
+                break;
+            case 11:
                 printf("Exiting calculator.\n");
                 return 0;
             default:
