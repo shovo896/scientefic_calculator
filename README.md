@@ -39,11 +39,12 @@ A comprehensive scientific calculator with advanced mathematical, trigonometric,
 - Input handling functions
 
 ## Features:
-✅ 24+ mathematical functions  
-✅ Error handling (division by zero, domain errors, etc.)  
-✅ Statistical analysis for datasets  
-✅ User-friendly menu interface  
-✅ Modular and maintainable code structure  
+✅ 24+ mathematical functions
+✅ Error handling (division by zero, domain errors, etc.)
+✅ Statistical analysis for datasets
+✅ Quick angle conversion between degrees and radians
+✅ User-friendly menu interface
+✅ Modular and maintainable code structure
 
 ## Setup Instructions:
 
@@ -51,8 +52,8 @@ A comprehensive scientific calculator with advanced mathematical, trigonometric,
 1. Open Code::Blocks
 2. Create a new Console Project
 3. Add ALL files to the project:
-   - **Source files (.c):** arithmetic.c, scientific.c, advanced.c, statistics.c, utility.c, main.c
-   - **Header files (.h):** arithmetic.h, scientific.h, advanced.h, statistics.h, utility.h
+   - **Source files (.c):** arithmetic.c, scientific.c, advanced.c, statistics.c, utility.c, conversions.c, main.c
+   - **Header files (.h):** arithmetic.h, scientific.h, advanced.h, statistics.h, utility.h, conversions.h
 4. Link the math library:
    - Go to: **Project > Build options**
    - Select your project name (not Debug/Release)
@@ -62,7 +63,7 @@ A comprehensive scientific calculator with advanced mathematical, trigonometric,
 
 ### Method 2: GCC Command Line
 ```bash
-gcc main.c arithmetic.c scientific.c advanced.c statistics.c utility.c -o calculator -lm
+gcc main.c arithmetic.c scientific.c advanced.c statistics.c utility.c conversions.c -o calculator -lm
 ./calculator
 ```
 
@@ -96,6 +97,12 @@ Result: 40.00
 ```
 Input: sin(1.57)  [≈ π/2 radians]
 Result: 1.0000
+```
+
+### Angle conversion:
+```
+Input: Degrees to Radians -> 90
+Result: 1.5708 radians
 ```
 
 ### Statistics:

@@ -11,7 +11,9 @@ void print_menu() {
     printf("6. Cosine\n");
     printf("7. Logarithm (natural log)\n");
     printf("8. Power (a^b)\n");
-    printf("9. Exit\n");
+    printf("9. Degrees to Radians\n");
+    printf("10. Radians to Degrees\n");
+    printf("11. Exit\n");
     printf("Choose option: ");
 }
 
